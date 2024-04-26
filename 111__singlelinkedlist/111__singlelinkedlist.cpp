@@ -42,5 +42,7 @@ void addNode() {
 			cout << "NIM sudah ada" << endl;
 			return;
 		}
+		prevoius = current;
+		current = current->next;
 	}
 }
