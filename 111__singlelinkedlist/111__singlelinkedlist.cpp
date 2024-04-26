@@ -117,7 +117,7 @@ void traverse() {
 			cout << "Data tidak ditemukan" << endl;
 		}
 	}
-	int main (){
+	int main() {
 		int pilihan;
 		do
 		{
@@ -171,7 +171,11 @@ void traverse() {
 					cout << "Piliha tidak ada" << endl;
 					break;
 				}
-			
-				
+			}
+			catch (exception e)
+			{
+				cout << "Terjadi kesalahan" << endl;
+			}
 
-
+		} while (pilihan != 5);
+	}
