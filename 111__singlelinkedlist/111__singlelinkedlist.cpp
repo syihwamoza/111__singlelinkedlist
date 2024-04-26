@@ -102,4 +102,14 @@ void traverse() {
 			currentNode = currentNode->next;
 	}
 }
+void searchData() {
+	if (listEmpty()) {
+		cout << "Masukan NIM:";
+		cin >> nim;
+		Node* currentNode = START;
+		while (currentNode !=NULL) {
+			if (currentNode->noMhs == nim) {
+				cout << "NIM:" << currentNoe->noMhs << ", Nama:" << current Node->nanme << endl;
+				return;
+			}
 
