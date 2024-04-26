@@ -107,9 +107,12 @@ void searchData() {
 		cout << "Masukan NIM:";
 		cin >> nim;
 		Node* currentNode = START;
-		while (currentNode !=NULL) {
+		while (currentNode != NULL) {
 			if (currentNode->noMhs == nim) {
 				cout << "NIM:" << currentNoe->noMhs << ", Nama:" << current Node->nanme << endl;
 				return;
 			}
+			currentNode = currentNode->next;
+		}
+		cout << "Data tidak ditemukan" << endl;
 
